@@ -1,0 +1,586 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E9ECF4;
+}
+
+.contenedor{
+    width: 100%;
+    margin: 10px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "header header header"
+    "nav nav nav"
+    "main main aside"
+    "widget1 widget1 widget1"
+    "widget2 widget2 widget2"
+    "footer footer footer";
+}
+
+.contenedor div,
+.contenedor header,
+.contenedor nav,
+.contenedor aside,
+.contenedor footer,
+.contenedor main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor header{
+    grid-area: header;
+    background-color: #92C8D6;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor nav{
+    grid-area: nav;
+    background-color: pink;
+    color: black;
+}
+
+.contenedor main{
+    grid-area: main;
+    background-color: #92C8D6;
+}
+
+.contenedor aside{
+    grid-area: aside;
+    background-color: violet;
+    color: #033D68;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
+
+div.widget1{
+    grid-area: widget1;
+    background-color: olive;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+div.widget2{
+    grid-area: widget2;
+    background-color: goldenrod;
+    color: #033D68;
+    text-align: center;
+}
+
+.contenedor footer{
+    grid-area: footer;
+    background-color: #92C8D6;
+    color: #033D68;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* GRID DE CIRUGIA PEDIATRICA*/
+
+.contenedora{
+    width: 100%;
+    margin: 10px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(6 auto);
+    grid-template-areas: "header header header"
+    "nav nav nav"
+    "banner banner banner"
+    "main main aside"
+    "redessociales redessociales redessociales"
+    "footer footer footer";
+}
+
+.contenedora header,
+.contenedora nav,
+.contenedora main,
+.contenedora aside,
+.contenedora div,
+.contenedora footer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedora header{
+    grid-area: header;
+    background-color: #92C8D6;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedora nav{
+    grid-area: nav;
+    background-color: pink;
+    color: black;
+}
+
+.contenedora main{
+    grid-area: main;
+    background-color: #92C8D6;
+}
+
+.contenedora aside{
+    grid-area: aside;
+    background-color: violet;
+    color: #033D68;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px; 
+}
+
+div.redessociales{
+    grid-area: redessociales;
+    background-color: olive;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+div.banner{
+    grid-area: banner;
+    background-color: goldenrod;
+    color: #033D68;
+    text-align: center;
+}
+
+.contenedora footer{
+    grid-area: footer;
+    background-color: #92C8D6;
+    color: #033D68;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* GRID DE PEDIATRÍA*/
+
+.contenedorb{
+    width: 100%;
+    margin: 10px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(6 auto);
+    grid-template-areas: "header header header"
+    "nav nav nav"
+    "banner banner banner"
+    "main main aside"
+    "redessociales redessociales redessociales"
+    "footer footer footer";
+}
+
+.contenedorb header,
+.contenedorb nav,
+.contenedorb main,
+.contenedorb aside,
+.contenedorb div,
+.contenedorb footer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedorb header{
+    grid-area: header;
+    background-color: #92C8D6;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorb nav{
+    grid-area: nav;
+    background-color: pink;
+    color: black;
+}
+
+.contenedorb main{
+    grid-area: main;
+    background-color: #92C8D6;
+}
+
+.contenedorb aside{
+    grid-area: aside;
+    background-color: violet;
+    color: #033D68;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px; 
+}
+
+div.redessociales{
+    grid-area: redessociales;
+    background-color: olive;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+div.banner{
+    grid-area: banner;
+    background-color: goldenrod;
+    color: #033D68;
+    text-align: center;
+}
+
+.contenedorb footer{
+    grid-area: footer;
+    background-color: #92C8D6;
+    color: #033D68;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* GRID DE GALERIA*/
+
+.contenedorc{
+    width: 100%;
+    margin: 10px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(6 auto);
+    grid-template-areas: "header header header"
+    "nav nav nav"
+    "banner banner banner"
+    "aside main main"
+    "redessociales redessociales redessociales"
+    "footer footer footer";
+}
+
+.contenedorc header,
+.contenedorc nav,
+.contenedorc main,
+.contenedorc aside,
+.contenedorc div,
+.contenedorc footer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedorc header{
+    grid-area: header;
+    background-color: #92C8D6;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorc nav{
+    grid-area: nav;
+    background-color: pink;
+    color: black;
+}
+
+.contenedorc main{
+    grid-area: main;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #92C8D6;
+}
+
+.contenedorc aside{
+    grid-area: aside;
+    background-color: violet;
+    color: #033D68;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px; 
+}
+
+div.redessociales{
+    grid-area: redessociales;
+    background-color: olive;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+div.banner{
+    grid-area: banner;
+    background-color: goldenrod;
+    color: #033D68;
+    text-align: center;
+}
+
+.contenedorc footer{
+    grid-area: footer;
+    background-color: #92C8D6;
+    color: #033D68;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* GRID DE CONTACTO*/
+
+.contenedord{
+    width: 100%;
+    margin: 10px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(6 auto);
+    grid-template-areas: "header header header"
+    "nav nav nav"
+    "main main main"
+    "redessociales redessociales aside"
+    "banner banner banner"
+    "footer footer footer";
+}
+
+.contenedord header,
+.contenedord nav,
+.contenedord main,
+.contenedord aside,
+.contenedord div,
+.contenedord footer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedord header{
+    grid-area: header;
+    background-color: #92C8D6;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedord nav{
+    grid-area: nav;
+    background-color: pink;
+    color: black;
+}
+
+.contenedord main{
+    grid-area: main;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #92C8D6;
+}
+
+.contenedord aside{
+    grid-area: aside;
+    background-color: violet;
+    color: #033D68;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px; 
+}
+
+div.redessociales{
+    grid-area: redessociales;
+    background-color: olive;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+div.banner{
+    grid-area: banner;
+    background-color: goldenrod;
+    color: #033D68;
+    text-align: center;
+}
+
+.contenedord footer{
+    grid-area: footer;
+    background-color: #92C8D6;
+    color: #033D68;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ESTILOS DE ELEMENTOS*/
+
+/*ESTILO LOGO HEADER*/
+.logoheader{
+     max-width: 100px;
+    height: 6rem;
+}
+
+/*ESTILO TEXTO DE NAV*/
+.menunav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+align-items: center;
+text-align: center;
+}
+
+.menunav li{
+    font-size: larger;
+    list-style-type: none;
+    font-family: "Oswald";
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*ESTILO LOGO FOOTER*/
+.logofooter{
+width: 90px;
+}
+
+/*TABLA CIRUGÍAS PEDIÁTRICA*/
+
+table {
+    width: 70%;
+    border: 3px solid #111111;
+    border-collapse: collapse;
+    font-family: "Open Sans";
+    font-size: small;
+}
+
+th,
+tfoot,
+td {
+    border: 3px solid #111111;
+    padding: 5px;
+}
+
+article{
+    font-family: "Open Sans";
+}
+
+h1{
+    font-family: "Oswald";
+}
+
+.titulo{
+    font-family: "Oswald";
+}
+
+p{
+    font-family: "Open Sans";
+}
+
+
+/*Medias Querie*/
+
+/*MOBILE CONTENEDOR PAG INDEX*/
+@media screen and (max-width: 767px) {
+.contenedor{
+    grid-template-areas: "header header header"
+    "nav nav nav"
+    "main main main"
+    "widget1 widget1 widget1"
+    "aside aside aside"
+    "widget2 widget2 widget2"
+    "footer footer footer";
+}
+}
+
+
+/*MOBILE CONTENEDORA PAG CIRUGIA PEDIATRICA*/
+@media screen and (max-width: 767px) {
+.contenedora{
+    grid-template-areas: "header header header"
+    "nav nav nav"
+    "banner banner banner"
+    "main main main"
+    "aside aside aside"
+    "redessociales redessociales redessociales"
+    "footer footer footer";
+}
+}
+
+
+/*MOBILE CONTENEDORB PAG PEDIATRIA*/
+@media screen and (max-width:767px){
+.contenedorb{
+    grid-template-areas: "header header header"
+    "nav nav nav"
+    "aside aside aside"
+    "main main main"
+    "banner banner banner"
+    "redessociales redessociales redessociales"
+    "footer footer footer";
+}
+}
+
+/*MOBILE CONTENEDORC PAG GALERIA*/
+@media screen and (max-width: 767px){
+.contenedorc{
+    grid-template-areas: "header header header"
+    "nav nav nav"
+    "banner banner banner"
+    "main main main"
+    "aside aside aside"
+    "redessociales redessociales redessociales"
+    "footer footer footer";
+}
+}
+
+/*/*MOBILE CONTENEDORD PAG CONTACTO*/
+@media screen and (max-width: 767px) {
+.contenedord{
+    grid-template-areas: "header header header"
+    "nav nav nav"
+    "main main main"
+    "banner banner aside"
+    "redessociales redessociales aside"
+    "footer footer footer";
+}
+    }
+
