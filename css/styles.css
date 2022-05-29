@@ -52,6 +52,7 @@ body{
 .contenedor main{
     grid-area: main;
     background-color: #92C8D6;
+    background-image: linear-gradient(90deg, #033D68, #92C8D6);
 }
 
 .contenedor aside{
@@ -63,6 +64,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100px;
+    background-image: linear-gradient(-90deg, rgb(218, 38, 218), #ec71cd);
 }
 
 div.widget1{
@@ -138,6 +140,7 @@ div.widget2{
 .contenedora main{
     grid-area: main;
     background-color: #92C8D6;
+    background-image: linear-gradient(90deg, #f5f241, #92C8D6);
 }
 
 .contenedora aside{
@@ -148,7 +151,8 @@ div.widget2{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100px; 
+    min-height: 100px;
+    background-image: linear-gradient(-90deg, rgb(218, 38, 218), #ec71cd);
 }
 
 div.redessociales{
@@ -224,6 +228,7 @@ div.banner{
 .contenedorb main{
     grid-area: main;
     background-color: #92C8D6;
+    background-image: linear-gradient(90deg, #033D68, #92C8D6);
 }
 
 .contenedorb aside{
@@ -234,7 +239,8 @@ div.banner{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100px; 
+    min-height: 100px;
+    background-image: linear-gradient(-90deg, rgb(218, 38, 218), #ec71cd);
 }
 
 div.redessociales{
@@ -316,6 +322,7 @@ div.banner{
     justify-content: space-around;
     padding: 30px;
     background-color: #92C8D6;
+    background-image: linear-gradient(90deg, #f5f241, #92C8D6);
 }
 
 .contenedorc aside{
@@ -327,6 +334,7 @@ div.banner{
     align-items: center;
     justify-content: center;
     min-height: 100px; 
+    background-image: linear-gradient(-90deg, rgb(218, 38, 218), #ec71cd);
 }
 
 div.redessociales{
@@ -476,11 +484,50 @@ a{
     text-decoration: none;
 }
 
+/*ANIMACIONES*/
+a:hover{
+    color:rgb(112, 8, 60);
+    font-size: x-large;
+}
 
 /*ESTILO LOGO FOOTER*/
 .logofooter{
 width: 90px;
 }
+
+.hoversm:hover{
+    font-size: x-large;
+}
+
+h1{
+    animation-duration: 2s;
+   animation-name: aparecer;
+   
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.logoheader,
+.logofooter{
+  animation: rebotar .6s alternate infinite;
+}
+
+@keyframes rebotar{
+  from{
+      transform: scaleX(1.25);
+  }
+  to{
+    transform: scaleX(1) translateY(-10px);
+}
+}
+
 
 /*TABLA CIRUGÍAS PEDIÁTRICA*/
 
@@ -583,4 +630,5 @@ p{
     "footer footer footer";
 }
     }
+
 
