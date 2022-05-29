@@ -484,11 +484,50 @@ a{
     text-decoration: none;
 }
 
+/*ANIMACIONES*/
+a:hover{
+    color:rgb(112, 8, 60);
+    font-size: x-large;
+}
 
 /*ESTILO LOGO FOOTER*/
 .logofooter{
 width: 90px;
 }
+
+.hoversm:hover{
+    font-size: x-large;
+}
+
+h1{
+    animation-duration: 2s;
+   animation-name: aparecer;
+   
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.logoheader,
+.logofooter{
+  animation: rebotar .6s alternate infinite;
+}
+
+@keyframes rebotar{
+  from{
+      transform: scaleX(1.25);
+  }
+  to{
+    transform: scaleX(1) translateY(-10px);
+}
+}
+
 
 /*TABLA CIRUGÍAS PEDIÁTRICA*/
 
