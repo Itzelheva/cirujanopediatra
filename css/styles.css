@@ -283,7 +283,7 @@ div.banner{
     grid-template-areas: "header header header"
     "nav nav nav"
     "banner banner banner"
-    "aside main main"
+    "main main main"
     "redessociales redessociales redessociales"
     "footer footer footer";
 }
@@ -291,7 +291,6 @@ div.banner{
 .contenedorc header,
 .contenedorc nav,
 .contenedorc main,
-.contenedorc aside,
 .contenedorc div,
 .contenedorc footer {
     background-color: #fff;
@@ -323,18 +322,6 @@ div.banner{
     padding: 30px;
     background-color: #92C8D6;
     background-image: linear-gradient(90deg, #f5f241, #92C8D6);
-}
-
-.contenedorc aside{
-    grid-area: aside;
-    background-color: violet;
-    color: #033D68;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100px; 
-    background-image: linear-gradient(-90deg, rgb(218, 38, 218), #ec71cd);
 }
 
 div.redessociales{
@@ -456,6 +443,10 @@ div.banner{
     align-items: center;
 }
 
+.tamañogaleria{
+    width: 20rem;
+    height: 20rem;
+}
 
 /* ESTILOS DE ELEMENTOS*/
 
@@ -485,7 +476,7 @@ a{
 }
 
 /*ANIMACIONES*/
-a:hover{
+.violeta:hover{
     color:rgb(112, 8, 60);
     font-size: x-large;
 }
@@ -563,6 +554,7 @@ p{
 }
 
 
+
 /*Medias Querie*/
 
 /*MOBILE CONTENEDOR PAG INDEX*/
@@ -625,7 +617,7 @@ p{
     grid-template-areas: "header header header"
     "nav nav nav"
     "main main main"
-    "banner banner aside"
+    "banner banner banner"
     "redessociales redessociales aside"
     "footer footer footer";
 }

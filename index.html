@@ -15,18 +15,28 @@
 </head>
 
 <body>
-    <div class="contenedor">
+    <div class="container-xxl contenedor">
         <header class="header">
             <img class="logoheader" src="./images/logotransp.png" alt="rodrigo tapia borgo">
         </header>
 
         <nav class="navegador">
-            <ul class="menunav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/cirugiapediatrica.html">Cirugía Pediátrica</a></li>
-                <li><a href="pages/pediatria.html">Pediatría</a></li>
-                <li><a href="pages/galeria.html">Galería</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
+            <ul class="nav justify-content-center menunav">
+                <li class="nav-item">
+                    <a class="nav-link active violeta" aria-current="page" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link violeta" href="pages/cirugiapediatrica.html">CIRUGÍA PEDIÁTRICA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link violeta" href="pages/pediatria.html">PEDIATRÍA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link violeta" href="pages/galeria.html">GALERÍA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link violeta" href="pages/contacto.html">CONTACTO</a>
+                  </li>
             </ul>
         </nav>
 
@@ -44,7 +54,7 @@
                             México.
                         </li>
                     </ol>
-                    <br><br>
+
                     <h3 class="titulo">Estudios</h3>
                     <ul>
                         <li>Facultad de Medicina - Centro de Estudios Universitarios. </li>
@@ -56,54 +66,89 @@
                 </div>
             </article>
 
-            <article class="preguntas">
-                <div>
-                    <h3 class="titulo">¿Qué hace un pediatra?</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam sapiente deleniti
-                        amet
-                        magni iste
-                        provident aliquid! Temporibus recusandae ab quibusdam similique quaerat dolorem cum
-                        aliquid expedita
-                        eius molestiae accusantium hic, veritatis perspiciatis asperiores maiores
-                        necessitatibus?
-                    </p>
-                    <br><br>
-                    <h3 class="titulo">¿Qué hace un cirujano pediatra?</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam sapiente deleniti
-                        amet
-                        magni iste
-                        provident aliquid! Temporibus recusandae ab quibusdam similique quaerat dolorem cum
-                        aliquid expedita
-                        eius molestiae accusantium hic, veritatis perspiciatis asperiores maiores
-                        necessitatibus?
-                    </p>
-                    <br><br>
-                    <h3 class="titulo">¿Qué son las cirugías de mínima invasión?</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam sapiente deleniti
-                        amet
-                        magni iste
-                        provident aliquid! Temporibus recusandae ab quibusdam similique quaerat dolorem cum
-                        aliquid expedita
-                        eius molestiae accusantium hic, veritatis perspiciatis asperiores maiores
-                        necessitatibus?
-                    </p>
-                    <br><br>
-                    <h3 class="titulo">¿Cómo elegir un cirujano pediatra??</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam sapiente deleniti
-                        amet
-                        magni iste
-                        provident aliquid! Temporibus recusandae ab quibusdam similique quaerat dolorem cum
-                        aliquid expedita
-                        eius molestiae accusantium hic, veritatis perspiciatis asperiores maiores
-                        necessitatibus?
-                    </p>
-
-                    <p>prueba</p>
+            <article class="accordion preguntas">
+                <div class="accordion-item">
+                    <h2 class="accordion-header titulo id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Qué hace un pediatra?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed cumque voluptatum fugit
+                                ipsam nulla veniam soluta, tempore repudiandae consequatur blanditiis praesentium,
+                                laudantium cum saepe aut.</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header titulo" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Qué hace un cirujano pediatra?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed cumque voluptatum fugit
+                                ipsam nulla veniam soluta, tempore repudiandae consequatur blanditiis praesentium,
+                                laudantium cum saepe aut.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header titulo" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Qué son las cirugías de mínima invasión?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed cumque voluptatum fugit
+                                ipsam nulla veniam soluta, tempore repudiandae consequatur blanditiis praesentium,
+                                laudantium cum saepe aut.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header titulo" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            ¿Qué son las cirugías de mínima invasión?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed cumque voluptatum fugit
+                                ipsam nulla veniam soluta, tempore repudiandae consequatur blanditiis praesentium,
+                                laudantium cum saepe aut.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header titulo" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            ¿Qué son las cirugías de mínima invasión?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed cumque voluptatum fugit
+                                ipsam nulla veniam soluta, tempore repudiandae consequatur blanditiis praesentium,
+                                laudantium cum saepe aut.</p>
+                        </div>
+                    </div>
+                </div>
+
+
             </article>
         </main>
 
