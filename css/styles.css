@@ -407,7 +407,7 @@ div.banner{
 
 .contenedord aside{
     grid-area: aside;
-    background-color: violet;
+    background-color: #ee82ee;
     color: #033D68;
     text-align: center;
     display: flex;
@@ -553,7 +553,9 @@ p{
     font-family: "Open Sans";
 }
 
-
+.btn{
+    background-color: rgb(168, 226, 92);
+}
 
 /*Medias Querie*/
 
