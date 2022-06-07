@@ -14,10 +14,11 @@ body{
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(7, auto);
     grid-template-areas: "header header header"
     "nav nav nav"
-    "main main aside"
+    "main main main"
+    "aside aside aside"
     "widget1 widget1 widget1"
     "widget2 widget2 widget2"
     "footer footer footer";
@@ -72,7 +73,7 @@ div.widget1{
     background-color: olive;
     text-align: center;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between; 
 }
@@ -102,11 +103,12 @@ div.widget2{
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3 1fr);
-    grid-template-rows: repeat(6 auto);
+    grid-template-rows: repeat(7 auto);
     grid-template-areas: "header header header"
     "nav nav nav"
     "banner banner banner"
-    "main main aside"
+    "main main main"
+    "aside aside aside"
     "redessociales redessociales redessociales"
     "footer footer footer";
 }
@@ -161,6 +163,7 @@ div.redessociales{
     color: white;
     text-align: center;
     display: flex;
+    flex-direction: column;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around; 
@@ -190,11 +193,12 @@ div.banner{
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3 1fr);
-    grid-template-rows: repeat(6 auto);
+    grid-template-rows: repeat(7 auto);
     grid-template-areas: "header header header"
     "nav nav nav"
     "banner banner banner"
-    "main main aside"
+    "main main main"
+    "aside aside aside"
     "redessociales redessociales redessociales"
     "footer footer footer";
 }
@@ -279,11 +283,12 @@ div.banner{
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3 1fr);
-    grid-template-rows: repeat(6 auto);
+    grid-template-rows: repeat(7 auto);
     grid-template-areas: "header header header"
     "nav nav nav"
-    "banner banner banner"
     "main main main"
+    "banner banner banner"
+    "aside aside aside"
     "redessociales redessociales redessociales"
     "footer footer footer";
 }
@@ -411,6 +416,7 @@ div.banner{
     color: #033D68;
     text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100px; 
@@ -557,65 +563,71 @@ p{
     background-color: rgb(168, 226, 92);
 }
 
-/*Medias Querie*/
 
-/*MOBILE CONTENEDOR PAG INDEX*/
-@media screen and (max-width: 767px) {
+/*MEDIAS QUERIE*/
+
+/*MEDIAS QUERIE PANTALLAS MEDIANAS*/
+
+@media(min-width:768px) {
+    .contenedor{
+        grid-template-areas: "header header header"
+        "nav nav nav"
+        "main main aside"
+        "widget1 widget1 widget1"
+        "widget2 widget2 widget2"
+        "footer footer footer";
+    }
+
+    .contenedora{
+        grid-template-areas: "header header header"
+        "nav nav nav"
+        "banner banner banner"
+        "main main aside"
+        "redessociales redessociales redessociales"
+        "footer footer footer";
+    }
+
+    .contenedorb{
+        grid-template-areas: "header header header"
+        "nav nav nav"
+        "banner banner banner"
+        "main main aside"
+        "redessociales redessociales redessociales"
+        "footer footer footer";
+    }
+
+    .contenedorc{
+        grid-template-areas: "header header header"
+        "nav nav nav"
+        "main main main"
+        "banner banner banner"
+        "redessociales redessociales redessociales"
+        "footer footer footer";
+    }
+}
+
+
+/*MEDIAS QUERIE PANTALLAS GRANDES*/
+
+@media(min-width:992px){
 .contenedor{
     grid-template-areas: "header header header"
     "nav nav nav"
-    "main main main"
-    "widget1 widget1 widget1"
-    "aside aside aside"
-    "widget2 widget2 widget2"
+    "main main widget1"
+    "widget2 widget2 aside"
     "footer footer footer";
 }
-}
 
-
-/*MOBILE CONTENEDORA PAG CIRUGIA PEDIATRICA*/
-@media screen and (max-width: 767px) {
 .contenedora{
     grid-template-areas: "header header header"
     "nav nav nav"
+    "redessociales main main"
     "banner banner banner"
-    "main main main"
     "aside aside aside"
-    "redessociales redessociales redessociales"
     "footer footer footer";
 }
-}
 
-
-/*MOBILE CONTENEDORB PAG PEDIATRIA*/
-@media screen and (max-width:767px){
 .contenedorb{
-    grid-template-areas: "header header header"
-    "nav nav nav"
-    "aside aside aside"
-    "main main main"
-    "banner banner banner"
-    "redessociales redessociales redessociales"
-    "footer footer footer";
-}
-}
-
-/*MOBILE CONTENEDORC PAG GALERIA*/
-@media screen and (max-width: 767px){
-.contenedorc{
-    grid-template-areas: "header header header"
-    "nav nav nav"
-    "banner banner banner"
-    "main main main"
-    "aside aside aside"
-    "redessociales redessociales redessociales"
-    "footer footer footer";
-}
-}
-
-/*/*MOBILE CONTENEDORD PAG CONTACTO*/
-@media screen and (max-width: 767px) {
-.contenedord{
     grid-template-areas: "header header header"
     "nav nav nav"
     "main main main"
@@ -623,6 +635,22 @@ p{
     "redessociales redessociales aside"
     "footer footer footer";
 }
-    }
 
+.contenedorc{
+    grid-template-areas: "header header header"
+    "nav nav nav"
+    "main main redessociales"
+    "main main banner"
+    "footer footer footer";
+}
 
+.contenedord{
+    grid-template-areas: "header header header"
+    "nav nav nav"
+    "main main main"
+    "redessociales redessociales redessociales"
+    "banner banner aside"
+    "footer footer footer";
+}
+
+}
