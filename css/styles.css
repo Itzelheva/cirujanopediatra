@@ -143,6 +143,9 @@ div.widget2{
     grid-area: main;
     background-color: #92C8D6;
     background-image: linear-gradient(90deg, #f5f241, #92C8D6);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .contenedora aside{
@@ -164,9 +167,7 @@ div.redessociales{
     text-align: center;
     display: flex;
     flex-direction: column;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around; 
+   justify-content: space-between;
 }
 
 div.banner{
@@ -481,6 +482,13 @@ a{
     text-decoration: none;
 }
 
+.aap{
+    font-family: "Oswald";
+    font-size: xx-large;
+    text-decoration: none;
+    color: white;
+}
+
 /*ANIMACIONES*/
 .violeta:hover{
     color:rgb(112, 8, 60);
@@ -630,7 +638,8 @@ p{
 .contenedora{
     grid-template-areas: "header header header"
     "nav nav nav"
-    "redessociales main main"
+    "main main main"
+    "redessociales redessociales redessociales"
     "banner banner banner"
     "aside aside aside"
     "footer footer footer";

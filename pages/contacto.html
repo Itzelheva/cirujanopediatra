@@ -58,44 +58,34 @@
                     <h2 class="titulo">Consultas</h2>
                     <p> Completa el siguiente formulario con tus datos y pronto nos comunicaremos contigo</p>
 
-                    <input type="texto" placeholder="Nombre completo"><br>
                     <div>
-                        <form action="#">
-                            <input type="texto" placeholder="Nombre completo"><br>
-
-                            <label for="email">Correo electrónico:
-                                <input type="email" placeholder="ejemplo@gmail.com" name="email"><br>
-
-                                <label for="telefono">Telefono:</label>
-                                <input type="telefono" placeholder="" name="telefono"><br>
-
-                                <label for="edad">Edad:</label>
-                                <input type="edad" placeholder="" name="edad"><br>
-
-                            </label>
-                            <label for="Mensaje"> Mensaje:<br>
-                                <textarea placeholder=""></textarea>
-                            </label> <br>
-
-                            <h4>Datos del paciente</h4>
-
-                            <form action="#">
-
-                                <input type="texto" placeholder="Nombre del paciente"><br>
-
-                                <label for="edad">Edad</label>
-                                <input type="edad" placeholder="" name="edad"><br>
+                        <label for="nombreinput" class="form-label">Nombre del tutor</label>
+                        <input type="nombreinput" class="form-control" type="nombre" placeholder="Escribe tu nombre">
                     </div>
 
                     <div>
-                        <p>Género:</p>
+                        <label for="nombreinput" class="form-label">Nombre del paciente</label>
+                        <input type="nombreinput" class="form-control" type="nombre" placeholder="Escribe tu nombre">
+                    </div>
+
+                    <div>
+                        <label for="motivodeconsulta" class="form-label">Motivo de consulta</label>
+                        <input type="motivodeconsultainput" class="form-control" type="motivodeconsulta"
+                            placeholder="Describe brevemente el motivo de consulta">
+                    </div>
+
+                    <div>
+                        <label for="genero" class="form-label">Género:</label>
                         <div>Femenino
                             <input type="radio" name="femenino" value="femenino">
                         </div>
-                        <div>Masculino
-                            <input type="radio" name="masculino" value="masculino">
-                        </div>
 
+                        <div>Masculino
+                            <input type="radio" name="femenino" value="masculino">
+                        </div>
+                    </div>
+
+                    <div>
                         <p>Preferencia horario de consulta</p>
                         <select name="horario" id="horario">
                             <option value="eligehorario">Elige un horario</option>
@@ -103,16 +93,13 @@
                             <option value="1100200">11:00am a 2:00pm</option>
                             <option value="400800">4:00pm a 8:00pm</option>
                         </select>
-
-                        <div>¿Te gustaría recibir el boletín mensual a tu correo electrónico?
-                            <input type="checkbox" name="aceptar" value="1">
-                        </div>
-
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar datos">
-
-                        </form>
                     </div>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar datos">
+
+                    </form>
+                </div>
 
             </article>
         </main>
