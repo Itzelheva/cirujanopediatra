@@ -604,6 +604,15 @@ p{
         "redessociales redessociales redessociales"
         "footer footer footer";
     }
+
+    .contenedord{
+        grid-template-areas: "header header header"
+        "nav nav nav"
+        "main main main"
+        "banner banner banner"
+        "redessociales redessociales aside"
+        "footer footer footer";
+    }
 }
 
 
@@ -648,8 +657,8 @@ p{
     grid-template-areas: "header header header"
     "nav nav nav"
     "main main main"
-    "redessociales redessociales redessociales"
-    "banner banner aside"
+    "banner banner banner"
+    "redessociales redessociales aside"
     "footer footer footer";
 }
 
