@@ -1,4 +1,13 @@
 @charset "UTF-8";
+.logo-animacion, .contenedor header .logoheader, .contenedor footer .logofooter, .contenedora header .logoheader, .contenedora footer .logofooter, .contenedorb header .logoheader, .contenedorb footer .logofooter, .contenedorc header .logoheader, .contenedorc footer .logofooter, .contenedord header .logoheader, .contenedord footer .logofooter {
+  animation: rebotar .6s alternate infinite; }
+
+@keyframes rebotar {
+  from {
+    transform: scaleX(1.25); }
+  to {
+    transform: scaleX(1) translateY(-10px); } }
+
 * {
   margin: 0;
   padding: 0;
@@ -29,25 +38,17 @@ body {
 .contenedor header {
   grid-area: header;
   background-color: #92C8D6;
-  color: white;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .contenedor header .logoheader {
     max-width: 100px;
     height: 6rem; }
-  .contenedor header .logoheader {
-    animation: rebotar .6s alternate infinite; }
-
-@keyframes rebotar {
-  from {
-    transform: scaleX(1.25); }
-  to {
-    transform: scaleX(1) translateY(-10px); } }
 
 .contenedor nav {
   grid-area: nav;
-  background-color: pink;
+  background-color: #ffc0cb;
   color: black; }
   .contenedor nav .menunav {
     display: flex;
@@ -102,7 +103,7 @@ body {
 
 div.widget1 {
   grid-area: widget1;
-  background-color: olive;
+  background-color: #808000;
   color: #fff;
   text-align: center;
   display: flex;
@@ -112,7 +113,7 @@ div.widget1 {
 
 div.widget2 {
   grid-area: widget2;
-  background-color: goldenrod;
+  background-color: #daa520;
   color: #fff;
   text-align: center; }
 
@@ -126,14 +127,6 @@ div.widget2 {
   align-items: center; }
   .contenedor footer .logofooter {
     width: 90px; }
-  .contenedor footer .logofooter {
-    animation: rebotar .6s alternate infinite; }
-
-@keyframes rebotar {
-  from {
-    transform: scaleX(1.25); }
-  to {
-    transform: scaleX(1) translateY(-10px); } }
 
 .contenedora {
   width: 100%;
@@ -157,21 +150,13 @@ div.widget2 {
 .contenedora header {
   grid-area: header;
   background-color: #92C8D6;
-  color: white;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .contenedora header .logoheader {
     max-width: 100px;
     height: 6rem; }
-  .contenedora header .logoheader {
-    animation: rebotar .6s alternate infinite; }
-
-@keyframes rebotar {
-  from {
-    transform: scaleX(1.25); }
-  to {
-    transform: scaleX(1) translateY(-10px); } }
 
 .contenedora nav {
   grid-area: nav;
@@ -209,7 +194,7 @@ div.widget2 {
 
 .contenedora aside {
   grid-area: aside;
-  background-color: violet;
+  background-color: #ee82ee;
   color: #fff;
   text-align: center;
   display: flex;
@@ -242,21 +227,13 @@ div.banner {
 .contenedora footer {
   grid-area: footer;
   background-color: #92C8D6;
-  color: #fff;
+  color: #033D68;
   font-family: "Oswald";
   display: flex;
   flex-direction: column;
   align-items: center; }
   .contenedora footer .logofooter {
     width: 90px; }
-  .contenedora footer .logofooter {
-    animation: rebotar .6s alternate infinite; }
-
-@keyframes rebotar {
-  from {
-    transform: scaleX(1.25); }
-  to {
-    transform: scaleX(1) translateY(-10px); } }
 
 .contenedorb {
   width: 100%;
@@ -280,21 +257,13 @@ div.banner {
 .contenedorb header {
   grid-area: header;
   background-color: #92C8D6;
-  color: white;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .contenedorb header .logoheader {
     max-width: 100px;
     height: 6rem; }
-  .contenedorb header .logoheader {
-    animation: rebotar .6s alternate infinite; }
-
-@keyframes rebotar {
-  from {
-    transform: scaleX(1.25); }
-  to {
-    transform: scaleX(1) translateY(-10px); } }
 
 .contenedorb nav {
   grid-area: nav;
@@ -370,14 +339,6 @@ div.banner {
   align-items: center; }
   .contenedorb footer .logofooter {
     width: 90px; }
-  .contenedorb footer .logofooter {
-    animation: rebotar .6s alternate infinite; }
-
-@keyframes rebotar {
-  from {
-    transform: scaleX(1.25); }
-  to {
-    transform: scaleX(1) translateY(-10px); } }
 
 .contenedorc {
   width: 100%;
@@ -400,21 +361,13 @@ div.banner {
 .contenedorc header {
   grid-area: header;
   background-color: #92C8D6;
-  color: white;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .contenedorc header .logoheader {
     max-width: 100px;
     height: 6rem; }
-  .contenedorc header .logoheader {
-    animation: rebotar .6s alternate infinite; }
-
-@keyframes rebotar {
-  from {
-    transform: scaleX(1.25); }
-  to {
-    transform: scaleX(1) translateY(-10px); } }
 
 .contenedorc nav {
   grid-area: nav;
@@ -456,7 +409,7 @@ div.banner {
 div.redessociales {
   grid-area: redessociales;
   background-color: olive;
-  color: #fff;
+  color: #E9ECF4;
   text-align: center;
   display: flex;
   flex-flow: row wrap;
@@ -479,14 +432,6 @@ div.banner {
   align-items: center; }
   .contenedorc footer .logofooter {
     width: 90px; }
-  .contenedorc footer .logofooter {
-    animation: rebotar .6s alternate infinite; }
-
-@keyframes rebotar {
-  from {
-    transform: scaleX(1.25); }
-  to {
-    transform: scaleX(1) translateY(-10px); } }
 
 .contenedord {
   width: 100%;
@@ -510,21 +455,13 @@ div.banner {
 .contenedord header {
   grid-area: header;
   background-color: #92C8D6;
-  color: white;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .contenedord header .logoheader {
     max-width: 100px;
     height: 6rem; }
-  .contenedord header .logoheader {
-    animation: rebotar .6s alternate infinite; }
-
-@keyframes rebotar {
-  from {
-    transform: scaleX(1.25); }
-  to {
-    transform: scaleX(1) translateY(-10px); } }
 
 .contenedord nav {
   grid-area: nav;
@@ -592,14 +529,6 @@ div.banner {
   align-items: center; }
   .contenedord footer .logofooter {
     width: 90px; }
-  .contenedord footer .logofooter {
-    animation: rebotar .6s alternate infinite; }
-
-@keyframes rebotar {
-  from {
-    transform: scaleX(1.25); }
-  to {
-    transform: scaleX(1) translateY(-10px); } }
 
 @media (min-width: 768px) {
   .contenedor {

@@ -1,5 +1,7 @@
 @import "tipografias";
 @import "variables";
+@import "animaciones";
+
 
 * {
     margin: 0;
@@ -41,8 +43,8 @@ body {
 
 .contenedor header {
     grid-area: header;
-    background-color: $color-principal;
-    color: white;
+    background-color: map-get($colores,color-principal);
+    color: map-get($colores,color-titulos);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,27 +52,13 @@ body {
     .logoheader {
         max-width: 100px;
         height: 6rem;
+        @extend .logo-animacion;
     }
-
-    .logoheader {
-        animation: rebotar .6s alternate infinite;
-
-        @keyframes rebotar {
-            from {
-                transform: scaleX(1.25);
-            }
-
-            to {
-                transform: scaleX(1) translateY(-10px);
-            }
-        }
-    }
-
 }
 
 .contenedor nav {
     grid-area: nav;
-    background-color: pink;
+    background-color: #ffc0cb;
     color: black;
 
     .menunav {
@@ -84,7 +72,7 @@ body {
     .menunav li {
         font-size: larger;
         list-style-type: none;
-        font-family: $titulos-principales
+        font-family: $titulos-principales;
     }
 
     a {
@@ -97,7 +85,7 @@ body {
         font-family: $titulos-principales;
 
         &:hover {
-          background-color: #E9ECF4;
+            background-color: map-get($colores,color-hover);
             font-size: x-large;
         }
     }
@@ -138,7 +126,7 @@ body {
 .contenedor aside {
     grid-area: aside;
     background-color: violet;
-    color: $color-titulo-cajas;
+    color: map-get($colores,color-titulos);
     font-family: $titulos-principales;
     text-align: center;
     display: flex;
@@ -150,8 +138,8 @@ body {
 
 div.widget1 {
     grid-area: widget1;
-    background-color: olive;
-    color: $color-titulo-cajas;
+    background-color: #808000;
+    color: map-get($colores,color-titulos);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -161,14 +149,14 @@ div.widget1 {
 
 div.widget2 {
     grid-area: widget2;
-    background-color: goldenrod;
-    color: $color-titulo-cajas;
+    background-color: #daa520;
+    color: map-get($colores,color-titulos);
     text-align: center;
 }
 
 .contenedor footer {
     grid-area: footer;
-    background-color: $color-principal;
+    background-color: map-get($colores,color-principal);
     color: #033D68;
     font-family: $titulos-principales;
     display: flex;
@@ -177,19 +165,7 @@ div.widget2 {
 
     .logofooter {
         width: 90px;
-    }
-
-    .logofooter {
-        animation: rebotar .6s alternate infinite;
-    }
-
-    @keyframes rebotar {
-        from {
-            transform: scaleX(1.25);
-        }
-        to {
-            transform: scaleX(1) translateY(-10px);
-        }
+        @extend .logo-animacion;
     }
 }
 
@@ -226,8 +202,8 @@ div.widget2 {
 
 .contenedora header {
     grid-area: header;
-    background-color: $color-principal;
-    color: white;
+    background-color: map-get($colores,color-principal);
+    color: map-get($colores,color-titulos);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -235,21 +211,8 @@ div.widget2 {
     .logoheader {
         max-width: 100px;
         height: 6rem;
+        @extend .logo-animacion;
     }
-
-    .logoheader {
-        animation: rebotar .6s alternate infinite;
-
-        @keyframes rebotar {
-            from {
-                transform: scaleX(1.25);
-            }
-            to {
-                transform: scaleX(1) translateY(-10px);
-            }
-        }
-    }
-
 }
 
 .contenedora nav {
@@ -281,7 +244,7 @@ div.widget2 {
         font-family: $titulos-principales;
 
         &:hover {
-          background-color: #E9ECF4;
+          background-color:map-get($colores,color-hover);
             font-size: x-large;
         }
     }
@@ -302,8 +265,8 @@ div.widget2 {
 
 .contenedora aside {
     grid-area: aside;
-    background-color: violet;
-    color: $color-titulo-cajas;
+    background-color: #ee82ee;
+    color: map-get($colores,color-titulos);
     text-align: center;
     display: flex;
     align-items: center;
@@ -322,7 +285,7 @@ div.widget2 {
 div.redessociales {
     grid-area: redessociales;
     background-color: olive;
-    color: $color-titulo-cajas;
+    color: map-get($colores,color-titulos);
     text-align: center;
     display: flex;
     flex-flow: row wrap;
@@ -333,14 +296,14 @@ div.redessociales {
 div.banner {
     grid-area: banner;
     background-color: goldenrod;
-    color: $color-titulo-cajas;
+    color: map-get($colores,color-titulos);
     text-align: center;
 }
 
 .contenedora footer {
     grid-area: footer;
-    background-color: $color-principal;
-    color: $color-titulo-cajas;
+    background-color: map-get($colores,color-principal);
+    color: #033D68;
     font-family: $titulos-principales;
     display: flex;
     flex-direction: column;
@@ -348,19 +311,7 @@ div.banner {
 
     .logofooter {
         width: 90px;
-    }
-
-    .logofooter {
-        animation: rebotar .6s alternate infinite;
-    }
-
-    @keyframes rebotar {
-        from {
-            transform: scaleX(1.25);
-        }
-        to {
-            transform: scaleX(1) translateY(-10px);
-        }
+        @extend .logo-animacion;
     }
 }
 
@@ -397,8 +348,8 @@ div.banner {
 
 .contenedorb header {
     grid-area: header;
-    background-color: $color-principal;
-    color: white;
+    background-color: map-get($colores,color-principal);
+    color: map-get($colores,color-titulos);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -406,21 +357,8 @@ div.banner {
     .logoheader {
         max-width: 100px;
         height: 6rem;
+        @extend .logo-animacion,
     }
-
-    .logoheader {
-        animation: rebotar .6s alternate infinite;
-
-        @keyframes rebotar {
-            from {
-                transform: scaleX(1.25);
-            }
-            to {
-                transform: scaleX(1) translateY(-10px);
-            }
-        }
-    }
-
 }
 
 .contenedorb nav {
@@ -452,7 +390,7 @@ div.banner {
         font-family: $titulos-principales;
 
         &:hover {
-          background-color: #E9ECF4;
+          background-color: map-get($colores,color-hover);
             font-size: x-large;
         }
     }
@@ -472,7 +410,7 @@ div.banner {
 .contenedorb aside {
     grid-area: aside;
     background-color: violet;
-    color: $color-titulo-cajas;
+    color: map-get($colores,color-titulos);
     text-align: center;
     display: flex;
     align-items: center;
@@ -491,7 +429,7 @@ div.banner {
 div.redessociales {
     grid-area: redessociales;
     background-color: olive;
-    color: $color-titulo-cajas;
+    color: map-get($colores,color-titulos);
     text-align: center;
     display: flex;
     flex-flow: row wrap;
@@ -502,13 +440,13 @@ div.redessociales {
 div.banner {
     grid-area: banner;
     background-color: goldenrod;
-    color: $color-titulo-cajas;
+    color: map-get($colores,color-titulos);
     text-align: center;
 }
 
 .contenedorb footer {
     grid-area: footer;
-    background-color: $color-principal;
+    background-color: map-get($colores,color-principal);
     color: #033D68;
     font-family: $titulos-principales;
     display: flex;
@@ -517,19 +455,7 @@ div.banner {
 
     .logofooter {
         width: 90px;
-    }
-
-    .logofooter {
-        animation: rebotar .6s alternate infinite;
-    }
-
-    @keyframes rebotar {
-        from {
-            transform: scaleX(1.25);
-        }
-        to {
-            transform: scaleX(1) translateY(-10px);
-        }
+        @extend .logo-animacion;
     }
 }
 
@@ -565,8 +491,8 @@ div.banner {
 
 .contenedorc header {
     grid-area: header;
-    background-color: $color-principal;
-    color: white;
+    background-color: map-get($colores,color-principal);
+    color: map-get($colores,color-titulos);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -574,21 +500,8 @@ div.banner {
     .logoheader {
         max-width: 100px;
         height: 6rem;
+        @extend .logo-animacion;
     }
-
-    .logoheader {
-        animation: rebotar .6s alternate infinite;
-
-        @keyframes rebotar {
-            from {
-                transform: scaleX(1.25);
-            }
-            to {
-                transform: scaleX(1) translateY(-10px);
-            }
-        }
-    }
-
 }
 
 .contenedorc nav {
@@ -620,7 +533,7 @@ div.banner {
         font-family: $titulos-principales;
 
         &:hover {
-          background-color: #E9ECF4;
+          background-color: map-get($colores,color-hover);
             font-size: x-large;
         }
     }
@@ -645,7 +558,7 @@ div.banner {
 div.redessociales {
     grid-area: redessociales;
     background-color: olive;
-    color: $color-titulo-cajas;
+    color: map-get($colores,color-hover);
     text-align: center;
     display: flex;
     flex-flow: row wrap;
@@ -656,13 +569,13 @@ div.redessociales {
 div.banner {
     grid-area: banner;
     background-color: goldenrod;
-    color: $color-titulo-cajas;
+    color: map-get($colores,color-titulos);
     text-align: center;
 }
 
 .contenedorc footer {
     grid-area: footer;
-    background-color: $color-principal;
+    background-color: map-get($colores,color-principal);
     color: #033D68;
     font-family: $titulos-principales;
     display: flex;
@@ -671,19 +584,7 @@ div.banner {
 
     .logofooter {
         width: 90px;
-    }
-
-    .logofooter {
-        animation: rebotar .6s alternate infinite;
-    }
-
-    @keyframes rebotar {
-        from {
-            transform: scaleX(1.25);
-        }
-        to {
-            transform: scaleX(1) translateY(-10px);
-        }
+        @extend .logo-animacion;
     }
 }
 
@@ -719,8 +620,8 @@ div.banner {
 
 .contenedord header {
     grid-area: header;
-    background-color: $color-principal;
-    color: white;
+    background-color: map-get($colores,color-principal);
+    color: map-get($colores,color-titulos);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -728,21 +629,8 @@ div.banner {
     .logoheader {
         max-width: 100px;
         height: 6rem;
+        @extend .logo-animacion;
     }
-
-    .logoheader {
-        animation: rebotar .6s alternate infinite;
-
-        @keyframes rebotar {
-            from {
-                transform: scaleX(1.25);
-            }
-            to {
-                transform: scaleX(1) translateY(-10px);
-            }
-        }
-    }
-
 }
 
 .contenedord nav {
@@ -764,7 +652,7 @@ div.banner {
         font-family: $titulos-principales;
 
         &:hover {
-          background-color: #E9ECF4;
+          background-color: map-get($colores,color-hover);
             font-size: x-large;
         }
     }
@@ -788,7 +676,7 @@ div.banner {
 .contenedord aside {
     grid-area: aside;
     background-color: #ee82ee;
-    color: $color-titulo-cajas;
+    color: map-get($colores,color-titulos);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -800,7 +688,7 @@ div.banner {
 div.redessociales {
     grid-area: redessociales;
     background-color: olive;
-    color: $color-titulo-cajas;
+    color: map-get($colores,color-titulos);
     text-align: center;
     display: flex;
     flex-flow: row wrap;
@@ -811,13 +699,13 @@ div.redessociales {
 div.banner {
     grid-area: banner;
     background-color: goldenrod;
-    color: $color-titulo-cajas;
+    color: map-get($colores,color-titulos);
     text-align: center;
 }
 
 .contenedord footer{
     grid-area: footer;
-    background-color: $color-principal;
+    background-color: map-get($colores,color-principal);
     color: #033D68;
     font-family: $titulos-principales;
     display: flex;
@@ -826,19 +714,7 @@ div.banner {
 
     .logofooter {
         width: 90px;
-    }
-
-    .logofooter {
-        animation: rebotar .6s alternate infinite;
-    }
-
-    @keyframes rebotar {
-        from {
-            transform: scaleX(1.25);
-        }
-        to {
-            transform: scaleX(1) translateY(-10px);
-        }
+        @extend .logo-animacion;
     }
 }
 

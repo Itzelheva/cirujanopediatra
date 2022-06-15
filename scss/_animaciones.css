@@ -1,0 +1,15 @@
+.logo-animacion {
+    animation: rebotar .6s alternate infinite;
+}
+
+@keyframes rebotar {
+    from {
+        transform: scaleX(1.25);
+    }
+    to {
+        transform: scaleX(1) translateY(-10px);
+    }
+}
+
+
+
