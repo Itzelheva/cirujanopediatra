@@ -1,6 +1,7 @@
 @import "tipografias";
 @import "variables";
 @import "animaciones";
+@import "mixins";
 
 
 * {
@@ -28,6 +29,23 @@ body {
         "widget1 widget1 widget1"
         "widget2 widget2 widget2"
         "footer footer footer";
+
+        @include pantallasmedianas{
+            grid-template-areas: "header header header"
+            "nav nav nav"
+            "main main aside"
+            "widget1 widget1 widget1"
+            "widget2 widget2 widget2"
+            "footer footer footer";
+        }
+
+        @include pantallasgrandes{
+            grid-template-areas: "header header header"
+            "nav nav nav"
+            "main main widget1"
+            "widget2 widget2 aside"
+            "footer footer footer";
+        }
 }
 
 .contenedor div,
@@ -99,19 +117,8 @@ body {
 
     h1 {
         font-family: $titulos-principales;
-        animation-duration: 2s;
-        animation-name: aparecer;
-    }
-
-    @keyframes aparecer {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
+       @extend .h1-animacion;
+    } 
 
     .titulo {
         font-family: $titulos-principales;
@@ -187,6 +194,25 @@ div.widget2 {
         "aside aside aside"
         "redessociales redessociales redessociales"
         "footer footer footer";
+
+        @include pantallasmedianas{
+            grid-template-areas: "header header header"
+            "nav nav nav"
+            "banner banner banner"
+            "main main aside"
+            "redessociales redessociales redessociales"
+            "footer footer footer";
+        }
+
+        @include pantallasgrandes{
+            grid-template-areas: "header header header"
+            "nav nav nav"
+            "main main main"
+            "redessociales redessociales redessociales"
+            "banner banner banner"
+            "aside aside aside"
+            "footer footer footer";
+        }
 }
 
 .contenedora header,
@@ -333,6 +359,24 @@ div.banner {
         "aside aside aside"
         "redessociales redessociales redessociales"
         "footer footer footer";
+
+        @include pantallasmedianas{
+            grid-template-areas: "header header header"
+            "nav nav nav"
+            "banner banner banner"
+            "main main aside"
+            "redessociales redessociales redessociales"
+            "footer footer footer";
+        }
+
+        @include pantallasgrandes{
+            grid-template-areas: "header header header"
+            "nav nav nav"
+            "main main main"
+            "banner banner banner"
+            "redessociales redessociales aside"
+            "footer footer footer";
+        }
 }
 
 .contenedorb header,
@@ -477,6 +521,23 @@ div.banner {
         "aside aside aside"
         "redessociales redessociales redessociales"
         "footer footer footer";
+
+        @include pantallasmedianas{
+            grid-template-areas: "header header header"
+            "nav nav nav"
+            "main main main"
+            "banner banner banner"
+            "redessociales redessociales redessociales"
+            "footer footer footer";
+        }
+
+        @include pantallasgrandes{
+            grid-template-areas: "header header header"
+            "nav nav nav"
+            "main main redessociales"
+            "main main banner"
+            "footer footer footer";
+        }
 }
 
 .contenedorc header,
@@ -605,6 +666,24 @@ div.banner {
         "redessociales redessociales aside"
         "banner banner banner"
         "footer footer footer";
+
+        @include pantallasmedianas{
+            grid-template-areas: "header header header"
+            "nav nav nav"
+            "main main main"
+            "banner banner banner"
+            "redessociales redessociales aside"
+            "footer footer footer";
+        }
+
+        @include pantallasgrandes{
+            grid-template-areas: "header header header"
+            "nav nav nav"
+            "main main main"
+            "banner banner banner"
+            "redessociales redessociales aside"
+            "footer footer footer";
+        }
 }
 
 .contenedord header,
@@ -717,109 +796,6 @@ div.banner {
         @extend .logo-animacion;
     }
 }
-
-
-
 //FINALIZA GRID DE CONTACTO
 
 
-//MEDIAS QUERIE
-
-//MEDIAS QUERIE PANTALLAS MEDIANAS
-
-@media(min-width:768px) {
-    .contenedor {
-        grid-template-areas: "header header header"
-            "nav nav nav"
-            "main main aside"
-            "widget1 widget1 widget1"
-            "widget2 widget2 widget2"
-            "footer footer footer";
-    }
-
-    .contenedora {
-        grid-template-areas: "header header header"
-            "nav nav nav"
-            "banner banner banner"
-            "main main aside"
-            "redessociales redessociales redessociales"
-            "footer footer footer";
-    }
-
-    .contenedorb {
-        grid-template-areas: "header header header"
-            "nav nav nav"
-            "banner banner banner"
-            "main main aside"
-            "redessociales redessociales redessociales"
-            "footer footer footer";
-    }
-
-    .contenedorc {
-        grid-template-areas: "header header header"
-            "nav nav nav"
-            "main main main"
-            "banner banner banner"
-            "redessociales redessociales redessociales"
-            "footer footer footer";
-    }
-
-    .contenedord {
-        grid-template-areas: "header header header"
-            "nav nav nav"
-            "main main main"
-            "banner banner banner"
-            "redessociales redessociales aside"
-            "footer footer footer";
-    }
-    
-}
-
-//MEDIAS QUERIE PANTALLAS GRANDES
-
-@media(min-width:992px) {
-    .contenedor {
-        grid-template-areas: "header header header"
-            "nav nav nav"
-            "main main widget1"
-            "widget2 widget2 aside"
-            "footer footer footer";
-    }
-
-    .contenedora {
-        grid-template-areas: "header header header"
-            "nav nav nav"
-            "main main main"
-            "redessociales redessociales redessociales"
-            "banner banner banner"
-            "aside aside aside"
-            "footer footer footer";
-    }
-
-    .contenedorb {
-        grid-template-areas: "header header header"
-            "nav nav nav"
-            "main main main"
-            "banner banner banner"
-            "redessociales redessociales aside"
-            "footer footer footer";
-    }
-
-    .contenedorc {
-        grid-template-areas: "header header header"
-            "nav nav nav"
-            "main main redessociales"
-            "main main banner"
-            "footer footer footer";
-    }
-
-    .contenedord {
-        grid-template-areas: "header header header"
-            "nav nav nav"
-            "main main main"
-            "banner banner banner"
-            "redessociales redessociales aside"
-            "footer footer footer";
-    }
-
-}

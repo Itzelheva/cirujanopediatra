@@ -1,3 +1,5 @@
+
+
 .logo-animacion {
     animation: rebotar .6s alternate infinite;
 }
@@ -13,3 +15,17 @@
 
 
 
+.h1-animacion {
+    animation-duration: 2s;
+        animation-name: aparecer;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
