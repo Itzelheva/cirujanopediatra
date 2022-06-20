@@ -111,13 +111,16 @@ body {
 
 div.widget1 {
   grid-area: widget1;
-  background-color: #808000;
+  background-image: linear-gradient(-180deg, #266BB4, #6C1694);
   color: #fff;
   text-align: center;
+  font-family: "Oswald";
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
+  div.widget1 .quote {
+    max-width: 20rem; }
 
 div.widget2 {
   grid-area: widget2;
@@ -234,7 +237,7 @@ div.redessociales {
 
 div.banner {
   grid-area: banner;
-  background-color: goldenrod;
+  background-color: #92C8D6;
   color: #fff;
   text-align: center; }
 
@@ -345,7 +348,7 @@ div.redessociales {
 
 div.banner {
   grid-area: banner;
-  background-color: goldenrod;
+  background-color: white;
   color: #fff;
   text-align: center; }
 
