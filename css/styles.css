@@ -505,7 +505,7 @@ div.widget8 {
       grid-area: "header header header" "nav nav nav" "widget9 widget9 widget9" "main main main" "widget10 widget10 widget10" "aside aside aside" "footer footer footer"; } }
   @media (min-width: 992px) {
     .contenedord {
-      grid-area: "header header header" "nav nav nav" "widget10 widget10 widget10" "main main main" "widget9 widget9 aside" "footer footer footer"; } }
+      grid-area: "header header header" "nav nav nav" "widget10 widget10 widget10" "main main main" "widget9 widget9 widget9" "aside aside aside" "footer footer footer"; } }
 
 .contenedord header,
 .contenedord nav,
