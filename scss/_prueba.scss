@@ -1,0 +1,163 @@
+//INICIA GRID DE CIRUGÍA PEDIÁTRICA
+
+.contenedora {
+    width: 100%;
+    margin: 10px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(7 auto);
+    grid-template-areas: "header header header"
+        "nav nav nav"
+        "banner banner banner"
+        "main main main"
+        "aside aside aside"
+        "redessociales redessociales redessociales"
+        "footer footer footer";
+
+        @include pantallasmedianas{
+            grid-template-areas: "header header header"
+            "nav nav nav"
+            "banner banner banner"
+            "main main main"
+            "aside redessociales redessociales"
+            "footer footer footer";
+        }
+
+        @include pantallasgrandes{
+            grid-template-areas: "header header header"
+            "nav nav nav"
+            "main main main"
+            "aside redessociales redessociales"
+            "banner banner banner"
+            "footer footer footer";
+        }
+}
+
+.contenedora header,
+.contenedora nav,
+.contenedora main,
+.contenedora aside,
+.contenedora div,
+.contenedora footer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedora header {
+    grid-area: header;
+    background-color: map-get($colores,color-principal);
+    color: map-get($colores,color-titulos);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logoheader {
+        max-width: 100px;
+        height: 6rem;
+        @extend .logo-animacion;
+    }
+}
+
+.contenedora nav {
+    grid-area: nav;
+    background-color: pink;
+    color: black;
+
+    .menunav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menunav li {
+        font-size: larger;
+        list-style-type: none;
+        font-family: $titulos-principales;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        font-size: larger;
+        list-style-type: none;
+        font-family: $titulos-principales;
+
+        &:hover {
+          background-color:map-get($colores,color-hover);
+            font-size: x-large;
+        }
+    }
+}
+
+.contenedora main {
+    grid-area: main;
+    background-color: #92C8D6;
+    background-image: linear-gradient(90deg, #f5f241, #92C8D6);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h5 {
+        font-family: $titulos-principales;
+    }
+}
+
+.contenedora aside {
+    grid-area: aside;
+    background-color: #ee82ee;
+    color: map-get($colores,color-titulos);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    background-image: linear-gradient(-90deg, rgb(218, 38, 218), #ec71cd);
+
+    .aap {
+        font-family: $titulos-principales;
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+div.redessociales {
+    grid-area: redessociales;
+    background-color: olive;
+    color: map-get($colores,color-titulos);
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.banner {
+    grid-area: banner;
+    background-color: goldenrod;
+    color: map-get($colores,color-titulos);
+    text-align: center;
+}
+
+.contenedora footer {
+    grid-area: footer;
+    background-color: map-get($colores,color-principal);
+    color: #033D68;
+    font-family: $titulos-principales;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logofooter {
+        width: 90px;
+        @extend .logo-animacion;
+    }
+}
+
+//FINALIZA GRID DE CIRUGIA PEDIATRICA

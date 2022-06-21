@@ -149,10 +149,10 @@ div.widget2 {
   grid-template-areas: "header header header" "nav nav nav" "banner banner banner" "main main main" "aside aside aside" "redessociales redessociales redessociales" "footer footer footer"; }
   @media (min-width: 768px) {
     .contenedora {
-      grid-template-areas: "header header header" "nav nav nav" "banner banner banner" "main main aside" "redessociales redessociales redessociales" "footer footer footer"; } }
+      grid-template-areas: "header header header" "nav nav nav" "banner banner banner" "main main main" "aside redessociales redessociales" "footer footer footer"; } }
   @media (min-width: 992px) {
     .contenedora {
-      grid-template-areas: "header header header" "nav nav nav" "main main main" "redessociales redessociales redessociales" "banner banner banner" "aside aside aside" "footer footer footer"; } }
+      grid-template-areas: "header header header" "nav nav nav" "main main main" "aside redessociales redessociales" "banner banner banner" "footer footer footer"; } }
 
 .contenedora header,
 .contenedora nav,
@@ -237,7 +237,7 @@ div.redessociales {
 
 div.banner {
   grid-area: banner;
-  background-color: #92C8D6;
+  background-color: goldenrod;
   color: #fff;
   text-align: center; }
 

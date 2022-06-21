@@ -204,8 +204,8 @@ div.widget2 {
             grid-template-areas: "header header header"
             "nav nav nav"
             "banner banner banner"
-            "main main aside"
-            "redessociales redessociales redessociales"
+            "main main main"
+            "aside redessociales redessociales"
             "footer footer footer";
         }
 
@@ -213,9 +213,8 @@ div.widget2 {
             grid-template-areas: "header header header"
             "nav nav nav"
             "main main main"
-            "redessociales redessociales redessociales"
+            "aside redessociales redessociales"
             "banner banner banner"
-            "aside aside aside"
             "footer footer footer";
         }
 }
@@ -326,7 +325,7 @@ div.redessociales {
 
 div.banner {
     grid-area: banner;
-    background-color: #92C8D6;
+    background-color: goldenrod;
     color: map-get($colores,color-titulos);
     text-align: center;
 }
