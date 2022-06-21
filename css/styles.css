@@ -99,15 +99,15 @@ body {
 
 .contenedor aside {
   grid-area: aside;
-  background-color: violet;
+  background-image: linear-gradient(-180deg, #ec71cd, #6C1694);
   color: #fff;
-  font-family: "Oswald";
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100px;
-  background-image: linear-gradient(-90deg, #da26da, #ec71cd); }
+  justify-content: space-around; }
+  .contenedor aside .blanco {
+    background-color: #fff; }
 
 div.widget1 {
   grid-area: widget1;
@@ -227,29 +227,33 @@ div.widget2 {
 
 div.widget3 {
   grid-area: widget3;
-  background-color: olive;
+  background-image: linear-gradient(-180deg, #ec71cd, #6C1694);
   color: #fff;
   text-align: center;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around; }
+  div.widget3 .blanco {
+    background-color: #fff; }
 
 div.widget4 {
   grid-area: widget4;
   position: relative;
-  display: inline-block;
-  text-align: center; }
-  div.widget4 .centrado {
+  background: url(../images/banner.png) no-repeat center;
+  background-size: cover;
+  height: 200px;
+  overflow: hidden; }
+  div.widget4 .banner {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    color: #033D68;
     font-family: "Oswald";
-    font-size: 40px;
-    color: #033D68; }
-  div.widget4 .banner {
-    width: 100%; }
+    font-weight: 700;
+    text-transform: uppercase; }
 
 .contenedora footer {
   grid-area: footer;
@@ -348,29 +352,33 @@ div.widget4 {
 
 div.widget5 {
   grid-area: widget5;
-  background-color: olive;
+  background-image: linear-gradient(-180deg, #ec71cd, #6C1694);
   color: #fff;
   text-align: center;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around; }
+  div.widget5 .blanco {
+    background-color: #fff; }
 
 div.widget6 {
   grid-area: widget6;
   position: relative;
-  display: inline-block;
-  text-align: center; }
-  div.widget6 .centrado {
+  background: url(../images/banner.png) no-repeat center;
+  background-size: cover;
+  height: 200px;
+  overflow: hidden; }
+  div.widget6 .banner {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    color: #033D68;
     font-family: "Oswald";
-    font-size: 40px;
-    color: #033D68; }
-  div.widget6 .banner {
-    width: 100%; }
+    font-weight: 700;
+    text-transform: uppercase; }
 
 .contenedorb footer {
   grid-area: footer;
@@ -457,13 +465,15 @@ div.widget6 {
 
 div.widget7 {
   grid-area: widget7;
-  background-color: olive;
-  color: #E9ECF4;
+  background-image: linear-gradient(-180deg, #ec71cd, #6C1694);
+  color: #fff;
   text-align: center;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around; }
+  div.widget7 .blanco {
+    background-color: #fff; }
 
 div.widget8 {
   grid-area: widget8;
@@ -489,13 +499,13 @@ div.widget8 {
   gap: 10px;
   grid-template-columns: repeat(3 1fr);
   grid-template-rows: repeat(6 auto);
-  grid-template-areas: "header header header" "nav nav nav" "main main main" "widget9 widget9 widget9" "widget10 widget10 widget10" "footer footer footer"; }
+  grid-template-areas: "header header header" "nav nav nav" "widget10 widget10 widget10" "main main main" "widget9 widget9 widget9" "aside aside aside" "footer footer footer"; }
   @media (min-width: 768px) {
     .contenedord {
-      grid-template-areas: "header header header" "nav nav nav" "main main main" "widget10 widget10 widget10" "widget9 widget9 aside" "footer footer footer"; } }
+      grid-area: "header header header" "nav nav nav" "widget9 widget9 widget9" "main main main" "widget10 widget10 widget10" "aside aside aside" "footer footer footer"; } }
   @media (min-width: 992px) {
     .contenedord {
-      grid-template-areas: "header header header" "nav nav nav" "main main main" "widget10 widget10 widget10" "widget9 widget9 aside" "footer footer footer"; } }
+      grid-area: "header header header" "nav nav nav" "widget10 widget10 widget10" "main main main" "widget9 widget9 aside" "footer footer footer"; } }
 
 .contenedord header,
 .contenedord nav,
@@ -560,29 +570,33 @@ div.widget8 {
 
 div.widget9 {
   grid-area: widget9;
-  background-color: olive;
+  background-image: linear-gradient(-180deg, #ec71cd, #6C1694);
   color: #fff;
   text-align: center;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around; }
+  div.widget9 .blanco {
+    background-color: #fff; }
 
 div.widget10 {
   grid-area: widget10;
   position: relative;
-  display: inline-block;
-  text-align: center; }
-  div.widget10 .centrado {
+  background: url(../images/banner.png) no-repeat center;
+  background-size: cover;
+  height: 200px;
+  overflow: hidden; }
+  div.widget10 .banner {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    color: #033D68;
     font-family: "Oswald";
-    font-size: 40px;
-    color: #033D68; }
-  div.widget10 .banner {
-    width: 100%; }
+    font-weight: 700;
+    text-transform: uppercase; }
 
 .contenedord footer {
   grid-area: footer;
