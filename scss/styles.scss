@@ -193,19 +193,19 @@ div.widget2 {
     grid-template-columns: repeat(3 1fr);
     grid-template-rows: repeat(7 auto);
     grid-template-areas: "header header header"
-        "nav nav nav"
-        "banner banner banner"
-        "main main main"
-        "aside aside aside"
-        "redessociales redessociales redessociales"
-        "footer footer footer";
+    "nav nav nav"
+    "widget4 widget4 widget4"
+    "main main main"
+    "aside aside aside"
+"widget3 widget3 widget3"
+"footer footer footer";
 
         @include pantallasmedianas{
             grid-template-areas: "header header header"
             "nav nav nav"
-            "banner banner banner"
+            "widget4 widget4 widget4"
             "main main main"
-            "aside redessociales redessociales"
+            "aside widget3 widget3"
             "footer footer footer";
         }
 
@@ -213,8 +213,8 @@ div.widget2 {
             grid-template-areas: "header header header"
             "nav nav nav"
             "main main main"
-            "aside redessociales redessociales"
-            "banner banner banner"
+            "aside widget3 widget3"
+            "widget4 widget4 widget4"
             "footer footer footer";
         }
 }
@@ -312,8 +312,8 @@ div.widget2 {
     }
 }
 
-div.redessociales {
-    grid-area: redessociales;
+div.widget3 {
+    grid-area: widget3;
     background-color: olive;
     color: map-get($colores,color-titulos);
     text-align: center;
@@ -323,11 +323,25 @@ div.redessociales {
     justify-content: space-around;
 }
 
-div.banner {
-    grid-area: banner;
-    background-color: goldenrod;
-    color: map-get($colores,color-titulos);
+div.widget4 {
+    grid-area: widget4;
+    position: relative;
+    display: inline-block;
     text-align: center;
+
+    .centrado{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Oswald";
+        font-size: 40px;
+        color:#033D68
+    }
+
+    .banner{
+     width: 100%;
+    }
 }
 
 .contenedora footer {
@@ -358,18 +372,18 @@ div.banner {
     grid-template-rows: repeat(7 auto);
     grid-template-areas: "header header header"
         "nav nav nav"
-        "banner banner banner"
+        "widget6 widget6 widget6"
         "main main main"
         "aside aside aside"
-        "redessociales redessociales redessociales"
+        "widget5 widget5 widget5"
         "footer footer footer";
 
         @include pantallasmedianas{
             grid-template-areas: "header header header"
             "nav nav nav"
-            "banner banner banner"
+            "widget6 widget6 widget6"
             "main main aside"
-            "redessociales redessociales redessociales"
+            "widget5 widget5 widget5"
             "footer footer footer";
         }
 
@@ -377,8 +391,8 @@ div.banner {
             grid-template-areas: "header header header"
             "nav nav nav"
             "main main main"
-            "banner banner banner"
-            "redessociales redessociales aside"
+            "widget6 widget6 widget6"
+            "widget5 widget5 aside"
             "footer footer footer";
         }
 }
@@ -474,8 +488,8 @@ div.banner {
     }
 }
 
-div.redessociales {
-    grid-area: redessociales;
+div.widget5 {
+    grid-area: widget5;
     background-color: olive;
     color: map-get($colores,color-titulos);
     text-align: center;
@@ -485,11 +499,25 @@ div.redessociales {
     justify-content: space-around;
 }
 
-div.banner {
-    grid-area: banner;
-    background-color: white;
-    color: map-get($colores,color-titulos);
+div.widget6 {
+    grid-area: widget6;
+    position: relative;
+    display: inline-block;
     text-align: center;
+
+    .centrado{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Oswald";
+        font-size: 40px;
+        color:#033D68
+    }
+
+    .banner{
+     width: 100%;
+    }
 }
 
 .contenedorb footer {
@@ -521,25 +549,25 @@ div.banner {
     grid-template-areas: "header header header"
         "nav nav nav"
         "main main main"
-        "banner banner banner"
+        "widget8 widget8 widget8"
         "aside aside aside"
-        "redessociales redessociales redessociales"
+        "widget7 widget7 widget7"
         "footer footer footer";
 
         @include pantallasmedianas{
             grid-template-areas: "header header header"
             "nav nav nav"
             "main main main"
-            "banner banner banner"
-            "redessociales redessociales redessociales"
+            "widget8 widget8 widget8"
+            "widget7 widget7 widget7"
             "footer footer footer";
         }
 
         @include pantallasgrandes{
             grid-template-areas: "header header header"
             "nav nav nav"
-            "main main redessociales"
-            "main main banner"
+            "main main widget7"
+            "main main widget8"
             "footer footer footer";
         }
 }
@@ -620,8 +648,8 @@ div.banner {
     }
 }
 
-div.redessociales {
-    grid-area: redessociales;
+div.widget7 {
+    grid-area: widget7;
     background-color: olive;
     color: map-get($colores,color-hover);
     text-align: center;
@@ -631,8 +659,8 @@ div.redessociales {
     justify-content: space-around;
 }
 
-div.banner {
-    grid-area: banner;
+div.widget8 {
+    grid-area: widget8;
     background-color: goldenrod;
     color: map-get($colores,color-titulos);
     text-align: center;
@@ -667,16 +695,16 @@ div.banner {
     grid-template-areas: "header header header"
         "nav nav nav"
         "main main main"
-        "redessociales redessociales aside"
-        "banner banner banner"
+        "widget9 widget9 widget9"
+        "widget10 widget10 widget10"
         "footer footer footer";
 
         @include pantallasmedianas{
             grid-template-areas: "header header header"
             "nav nav nav"
             "main main main"
-            "banner banner banner"
-            "redessociales redessociales aside"
+            "widget10 widget10 widget10"
+            "widget9 widget9 aside"
             "footer footer footer";
         }
 
@@ -684,8 +712,8 @@ div.banner {
             grid-template-areas: "header header header"
             "nav nav nav"
             "main main main"
-            "banner banner banner"
-            "redessociales redessociales aside"
+            "widget10 widget10 widget10"
+            "widget9 widget9 aside"
             "footer footer footer";
         }
 }
@@ -768,8 +796,8 @@ div.banner {
     min-height: 100px;
 }
 
-div.redessociales {
-    grid-area: redessociales;
+div.widget9 {
+    grid-area: widget9;
     background-color: olive;
     color: map-get($colores,color-titulos);
     text-align: center;
@@ -779,11 +807,25 @@ div.redessociales {
     justify-content: space-around;
 }
 
-div.banner {
-    grid-area: banner;
-    background-color: goldenrod;
-    color: map-get($colores,color-titulos);
+div.widget10 {
+    grid-area: widget10;
+    position: relative;
+    display: inline-block;
     text-align: center;
+
+    .centrado{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Oswald";
+        font-size: 40px;
+        color:#033D68
+    }
+
+    .banner{
+     width: 100%;
+    }
 }
 
 .contenedord footer{
